@@ -2,59 +2,67 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header">
-        <div class="logo">News Portal</div>
-        <div id="nav">
-            <div class="menu-item">Home</div>
-            <div class="menu-item">Politics</div>
-            <div class="menu-item">Technology</div>
-            <div class="menu-item">Sports</div>
-        </div>
-    </div>
+    <header>
+        <h1 class="logo">News Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="menu-item">Home</a></li>
+                <li><a href="#" class="menu-item">Politics</a></li>
+                <li><a href="#" class="menu-item">Technology</a></li>
+                <li><a href="#" class="menu-item">Sports</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div class="main-content">
-        <div class="article">
-            <div class="article-title">Breaking News: Important Event Happens</div>
-            <div class="article-date">October 15, 2023</div>
-            <div class="article-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                <p>Nullam auctor, nisl eget ultricies tincidunt...</p>
-            </div>
-            <div class="article-author">By John Smith</div>
-        </div>
-        
-        <div class="article">
-            <div class="article-title">Technology Advancements in 2023</div>
-            <div class="article-date">October 14, 2023</div>
-            <div class="article-content">
-                <p>Vestibulum ante ipsum primis in faucibus...</p>
-            </div>
-            <div class="article-author">By Jane Doe</div>
-        </div>
-    </div>
+    <main>
+        <section>
+            <article>
+                <h2 class="article-title">Breaking News: Important Event Happens</h2>
+                <time datetime="2023-10-15" class="article-date">October 15, 2023</time>
+                <section class="article-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <p>Nullam auctor, nisl eget ultricies tincidunt...</p>
+                </section>
+                <address class="article-author">By John Smith</address>
+            </article>
+            
+            <article>
+                <h2 class="article-title">Technology Advancements in 2023</h2>
+                <time datetime="2023-10-14" class="article-date">October 14, 2023</time>
+                <section class="article-content">
+                    <p>Vestibulum ante ipsum primis in faucibus...</p>
+                </section>
+                <address class="article-author">By Jane Doe</address>
+            </article>
+        </section>
+    </main>
     
-    <div id="sidebar">
-        <div class="sidebar-section">
-            <div class="sidebar-title">Popular Articles</div>
-            <div class="sidebar-list">
-                <div class="sidebar-item">Article 1</div>
-                <div class="sidebar-item">Article 2</div>
-                <div class="sidebar-item">Article 3</div>
-            </div>
-        </div>
-    </div>
+    <aside>
+        <section>
+            <h3 class="sidebar-title">Popular Articles</h3>
+            <ul class="sidebar-list">
+                <li><a href="#" class="sidebar-item">Article 1</a></li>
+                <li><a href="#" class="sidebar-item">Article 2</a></li>
+                <li><a href="#" class="sidebar-item">Article 3</a></li>
+            </ul>
+        </section>
+    </aside>
     
-    <div id="footer">
-        <div class="copyright">© 2023 News Portal</div>
-        <div class="links">
-            <div class="link-item">About Us</div>
-            <div class="link-item">Contact</div>
-            <div class="link-item">Privacy Policy</div>
-        </div>
-    </div>
+    <footer>
+        <p class="copyright">© 2023 News Portal</p>
+        <nav>
+            <ul class="links">
+                <li><a href="#" class="link-item">About Us</a></li>
+                <li><a href="#" class="link-item">Contact</a></li>
+                <li><a href="#" class="link-item">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
